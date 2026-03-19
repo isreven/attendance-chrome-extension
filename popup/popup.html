@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Attendance</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>עדכון נוכחות</h1>
+      <p class="subtitle">SAP Synerion Attendance Updater</p>
+    </header>
+
+    <!-- Quick Action Section -->
+    <section class="quick-action">
+      <button id="updateAllBtn" class="btn btn-primary btn-large">
+        <span class="icon">🏠</span>
+        עדכן הכל לעבודה מרחוק
+      </button>
+      <p class="help-text">עדכן את כל התאריכים לקוד 27 - עבודה מרחוק</p>
+    </section>
+
+    <div class="divider">
+      <span>או</span>
+    </div>
+
+    <!-- Custom Dates Builder Section -->
+    <section class="custom-dates">
+      <h2>תאריכים מותאמים אישית</h2>
+      <p class="help-text">תאריכים אחרים יעודכנו לעבודה מרחוק (27)</p>
+
+      <div id="dateRows" class="date-rows">
+        <!-- Date rows will be added here dynamically -->
+      </div>
+
+      <button id="addDateBtn" class="btn btn-secondary">
+        <span class="icon">➕</span>
+        הוסף תאריך
+      </button>
+    </section>
+
+    <!-- Action Buttons -->
+    <section class="actions">
+      <button id="updateCustomBtn" class="btn btn-primary" disabled>
+        <span class="icon">✓</span>
+        עדכן נוכחות
+      </button>
+      <button id="clearAllBtn" class="btn btn-ghost">
+        נקה הכל
+      </button>
+    </section>
+
+    <!-- Activity Codes Reference (Collapsible) -->
+    <section class="codes-reference">
+      <details>
+        <summary>📋 רשימת קודי פעילות</summary>
+        <div id="codesListContainer" class="codes-list">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </details>
+    </section>
+
+    <!-- Status Display -->
+    <section id="statusSection" class="status-section hidden">
+      <div class="progress-bar">
+        <div id="progressBarFill" class="progress-fill"></div>
+      </div>
+      <div id="statusLog" class="status-log">
+        <!-- Real-time updates will appear here -->
+      </div>
+    </section>
+  </div>
+
+  <script src="../utils/activity-codes.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

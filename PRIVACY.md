@@ -1,0 +1,55 @@
+# Privacy Policy for SAP Synerion Attendance Updater
+
+**Last Updated:** March 19, 2026
+
+## Overview
+
+SAP Synerion Attendance Updater is a Chrome extension that helps users automate updating attendance codes in SAP Synerion.
+
+## Data Collection
+
+This extension does **NOT** collect, store, or transmit any personal data.
+
+### What We Don't Collect:
+- ❌ No login credentials
+- ❌ No attendance data
+- ❌ No personal information
+- ❌ No browsing history
+- ❌ No analytics or tracking
+
+### How the Extension Works:
+- Runs entirely in your browser (client-side only)
+- Uses your existing SAP Synerion login session
+- Only operates on pages you explicitly activate it on
+- All processing happens locally on your device
+- No data is sent to external servers
+
+## Permissions Explained
+
+### `storage`
+- Used to save your custom date preferences locally in your browser
+- Data never leaves your device
+
+### `activeTab`
+- Allows the extension to interact with the SAP Synerion page when you click the extension icon
+- Only works when you explicitly activate it
+
+### `host_permissions` (sapilattendance.il.c.eu-de-1.cloud.sap)
+- Allows the extension to run only on SAP Synerion domain
+- Cannot access any other websites
+
+## Third-Party Services
+
+This extension does not use any third-party services, analytics, or tracking tools.
+
+## Changes to This Policy
+
+We may update this privacy policy from time to time. Any changes will be posted in this document with an updated "Last Updated" date.
+
+## Contact
+
+For questions about this privacy policy, please contact: [Your Contact Email]
+
+## Consent
+
+By using this extension, you consent to this privacy policy.
