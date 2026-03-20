@@ -1,0 +1,24 @@
+{
+  "name": "attendance-chrome-extension",
+  "version": "1.0.0",
+  "description": "Automate updating attendance codes in SAP Synerion with a single click.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.wdf.sap.corp/Portal-CF/attendance-chrome-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^3.2.1",
+    "playwright": "^1.58.2",
+    "sharp": "^0.34.5"
+  }
+}

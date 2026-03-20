@@ -29,7 +29,7 @@
     <!-- Custom Dates Builder Section -->
     <section class="custom-dates">
       <h2>תאריכים מותאמים אישית</h2>
-      <p class="help-text">תאריכים אחרים יעודכנו לעבודה מרחוק (27)</p>
+      <p class="help-text">תאריכים שתרצי/ה לשנות לפעילות אחרת</p>
 
       <div id="dateRows" class="date-rows">
         <!-- Date rows will be added here dynamically -->
@@ -58,6 +58,52 @@
         <summary>📋 רשימת קודי פעילות</summary>
         <div id="codesListContainer" class="codes-list">
           <!-- Will be populated by JavaScript -->
+        </div>
+      </details>
+    </section>
+
+    <!-- Scheduling Settings -->
+    <section class="schedule-settings">
+      <details>
+        <summary>⏰ תזמון אוטומטי</summary>
+        <div class="schedule-content">
+          <div class="setting-row">
+            <label class="checkbox-label">
+              <input type="checkbox" id="enableSchedule">
+              <span>הפעל תזמון ב-19 לכל חודש</span>
+            </label>
+          </div>
+
+          <div class="setting-row">
+            <label>שעת התזמון:</label>
+            <select id="scheduleTime">
+              <option value="8">08:00</option>
+              <option value="9" selected>09:00</option>
+              <option value="10">10:00</option>
+              <option value="11">11:00</option>
+              <option value="12">12:00</option>
+              <option value="14">14:00</option>
+            </select>
+          </div>
+
+          <div class="setting-row">
+            <button id="saveScheduleBtn" class="btn btn-secondary btn-full">
+              שמור הגדרות
+            </button>
+          </div>
+
+          <div class="setting-row">
+            <button id="updateNowBtn" class="btn btn-primary btn-full">
+              🚀 Update All Now
+            </button>
+            <p class="help-text" style="margin-top: 8px; font-size: 11px;">
+              Opens Synerion and updates all to Remote Work
+            </p>
+          </div>
+
+          <div id="nextAlarmInfo" class="help-text" style="margin-top: 12px;">
+            <!-- Next alarm time will be shown here -->
+          </div>
         </div>
       </details>
     </section>

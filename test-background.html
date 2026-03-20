@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Test Background Script</title></head>
+<body>
+<h1>Background Script Test</h1>
+<button id="testBtn">Send Test Message</button>
+<div id="result"></div>
+
+<script>
+document.getElementById('testBtn').addEventListener('click', () => {
+  chrome.runtime.sendMessage({ action: 'testAlarm' }, (response) => {
+    document.getElementById('result').textContent = JSON.stringify(response);
+  });
+});
+</script>
+</body>
+</html>
